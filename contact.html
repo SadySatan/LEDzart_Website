@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – LED'Zart Production</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-contacts page-enter">
+
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-solid" id="navbar">
+    <div class="nav-logo">
+      <a href="index.html">
+        <img src="assets/images/logo.png" alt="Logo LED'Zart" class="nav-logo-img" />
+        <span class="nav-logo-text">LED'Zart<br><span class="nav-logo-sub">production</span></span>
+      </a>
+    </div>
+
+    <ul class="nav-links">
+      <li class="nav-item has-dropdown">
+        <a href="#" class="nav-link">
+          L'association <span class="nav-arrow">&#8964;</span>
+        </a>
+        <ul class="dropdown">
+          <li><a href="nous-decouvrir.html" class="dropdown-link">Nous découvrir</a></li>
+          <li><a href="#" class="dropdown-link">Nos réalisations</a></li>
+          <li><a href="#" class="dropdown-link">Rejoindre l'aventure</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="#" class="nav-link">Planning</a></li>
+      <li class="nav-item"><a href="#" class="nav-link active">Contacts</a></li>
+    </ul>
+
+    <button class="burger" id="burgerBtn">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- DRAWER MOBILE -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <nav class="nav-drawer" id="navDrawer">
+    <ul>
+      <li class="drawer-item has-submenu">
+        <a href="#" class="drawer-link" id="drawerAssoc">
+          L'association <span class="drawer-arrow">&#8964;</span>
+        </a>
+        <ul class="drawer-submenu">
+          <li><a href="nous-decouvrir.html" class="drawer-submenu-link">Nous découvrir</a></li>
+          <li><a href="#" class="drawer-submenu-link">Nos réalisations</a></li>
+          <li><a href="#" class="drawer-submenu-link">Rejoindre l'aventure</a></li>
+        </ul>
+      </li>
+      <li class="drawer-item"><a href="#" class="drawer-link">Planning</a></li>
+      <li class="drawer-item"><a href="#" class="drawer-link active">Contacts</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENU -->
+  <main class="contact-main">
+    <div class="contact-bg"><div class="contact-overlay"></div></div>
+
+    <div class="contact-container">
+      <h1 class="contact-title">Contactez-nous</h1>
+      <p class="contact-description">Une question ou un projet ?
+
+Pour vos événements, concerts ou prestations techniques lumière et son, contactez-nous via ce formulaire. </p>
+
+      <p id="formMessage" class="form-message"></p>
+
+      <form class="contact-form" action="send-mail.php" method="POST">
+        
+        <div class="form-row">
+        <div class="form-group">
+            <input type="text" name="firstName" placeholder="Prénom" required />
+        </div>
+
+        <div class="form-group">
+            <input type="text" name="lastName" placeholder="Nom" required />
+        </div>
+        </div>
+
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Votre email" required />
+        </div>
+
+        <div class="form-group">
+          <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-contact">
+          Envoyer
+        </button>
+
+      </form>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

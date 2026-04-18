@@ -1,28 +1,83 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Description de ma page" />
-    <title>Mon Site</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LED'Zart Production</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-accueil">
 
-    <header>
-      <nav>
-        <!-- Navigation -->
-      </nav>
-    </header>
+  <!-- NAVIGATION DESKTOP -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <a href="index.html">
+        <img src="assets/images/logo.png" alt="Logo LED'Zart" class="nav-logo-img" />
+        <span class="nav-logo-text">LED'Zart<br><span class="nav-logo-sub">production</span></span>
+      </a>
+    </div>
 
-    <main>
-      <h2>Bienvenue ddddddddd mon site</h2>>
-    </main>
+    <!-- Menu desktop -->
+    <ul class="nav-links">
+      <li class="nav-item has-dropdown">
+        <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">
+          L'association <span class="nav-arrow">&#8964;</span>
+        </a>
+        <ul class="dropdown">
+          <li><a href="nous-decouvrir.html" class="dropdown-link">Nous découvrir</a></li>
+          <li><a href="#" class="dropdown-link">Nos réalisations</a></li>
+          <li><a href="#" class="dropdown-link">Rejoindre l'aventure</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="#" class="nav-link">Planning</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
 
-    <footer>
-      <!-- Pied de page -->
-    </footer>
+    <!-- Burger (mobile uniquement) -->
+    <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-    <script src="js/script.js"></script>
-  </body>
+  <!-- DRAWER MOBILE -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <nav class="nav-drawer" id="navDrawer" aria-label="Menu mobile">
+    <ul>
+      <li class="drawer-item has-submenu">
+        <a href="#" class="drawer-link" id="drawerAssoc">
+          L'association <span class="drawer-arrow">&#8964;</span>
+        </a>
+        <ul class="drawer-submenu">
+          <li><a href="nous-decouvrir.html" class="drawer-submenu-link">Nous découvrir</a></li>
+          <li><a href="#" class="drawer-submenu-link">Nos réalisations</a></li>
+          <li><a href="#" class="drawer-submenu-link">Rejoindre l'aventure</a></li>
+        </ul>
+      </li>
+      <li class="drawer-item"><a href="#" class="drawer-link">Planning</a></li>
+      <li class="drawer-item"><a href="contact.html" class="drawer-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"><div class="hero-overlay"></div></div>
+    <div class="hero-content">
+      <div class="hero-logo-block">
+        <img src="assets/images/logo.png" alt="Logo LED'Zart" class="hero-logo-img" />
+        <div class="hero-logo-text">
+          <span class="hero-title">LED'Zart</span>
+          <span class="hero-subtitle">production</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-cta">
+      <a href="nous-decouvrir.html" class="btn-decouvrir" id="btnDecouvrir">
+        Nous découvrir
+        <span class="btn-arrow">&#8964;</span>
+      </a>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
 </html>

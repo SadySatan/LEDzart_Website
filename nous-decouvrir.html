@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nous découvrir – LED'Zart Production</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-nous-decouvrir page-enter">
+
+  <!-- NAVIGATION DESKTOP -->
+  <nav class="navbar navbar-solid" id="navbar">
+    <div class="nav-logo">
+      <a href="index.html">
+        <img src="assets/images/logo.png" alt="Logo LED'Zart" class="nav-logo-img" />
+        <span class="nav-logo-text">LED'Zart<br><span class="nav-logo-sub">production</span></span>
+      </a>
+    </div>
+
+    <!-- Menu desktop -->
+    <ul class="nav-links">
+      <li class="nav-item has-dropdown">
+        <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">
+          L'association <span class="nav-arrow">&#8964;</span>
+        </a>
+        <ul class="dropdown">
+          <li><a href="nous-decouvrir.html" class="dropdown-link active">Nous découvrir</a></li>
+          <li><a href="#" class="dropdown-link">Nos réalisations</a></li>
+          <li><a href="#" class="dropdown-link">Rejoindre l'aventure</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="#" class="nav-link">Planning</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+
+    <!-- Burger (mobile uniquement) -->
+    <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- DRAWER MOBILE -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <nav class="nav-drawer" id="navDrawer" aria-label="Menu mobile">
+    <ul>
+      <li class="drawer-item has-submenu">
+        <a href="#" class="drawer-link" id="drawerAssoc">
+          L'association <span class="drawer-arrow">&#8964;</span>
+        </a>
+        <ul class="drawer-submenu">
+          <li><a href="nous-decouvrir.html" class="drawer-submenu-link active">Nous découvrir</a></li>
+          <li><a href="#" class="drawer-submenu-link">Nos réalisations</a></li>
+          <li><a href="#" class="drawer-submenu-link">Rejoindre l'aventure</a></li>
+        </ul>
+      </li>
+      <li class="drawer-item"><a href="#" class="drawer-link">Planning</a></li>
+      <li class="drawer-item"><a href="contact.html" class="drawer-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENU -->
+  <main class="nd-main">
+    <div class="nd-bg"><div class="nd-overlay"></div></div>
+    <div class="nd-container">
+      <div class="nd-photos">
+        <div class="nd-photo nd-photo-1">
+          <img src="assets/images/ledzart_concert.jpg" alt="Éclairage scène" />
+        </div>
+        <div class="nd-photo nd-photo-2">
+          <img src="assets/images/ledzart_sceno.jpg" alt="Console de mixage" />
+        </div>
+      </div>
+      <div class="nd-text">
+        <h1 class="nd-title">Qui sommes-nous</h1>
+        <p class="nd-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </p>
+        <p class="nd-cta-line">
+          Un projet en tête ?&nbsp;<a href="#" class="nd-contact-link">Contactez-nous</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
