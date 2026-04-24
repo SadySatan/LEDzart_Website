@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $body = "Nom: $firstName $lastName\nEmail: $email\n\nMessage:\n$message";
 
-    $headers = "From: $email";
+    $headers = "From: noreply@tondomaine.com\r\nReply-To: " . filter_var($email, FILTER_SANITIZE_EMAIL);
 
     if (mail($to, $subject, $body, $headers)) {
         header("Location: contacts.html?success=1");
