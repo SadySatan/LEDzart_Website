@@ -759,6 +759,11 @@ img { display: block; max-width: 100%; }
   color: black;
 }
 
+.contact-description {
+margin-bottom: 10em;
+   
+}
+
 .form-message {
   margin-bottom: 1rem;
   font-size: 0.95rem;
