@@ -697,6 +697,10 @@ img { display: block; max-width: 100%; }
   text-align: center;
   background-color: rgba(255,255,255,0.15);
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .contact-title {
@@ -705,66 +709,26 @@ img { display: block; max-width: 100%; }
   margin-bottom: 2rem;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 0.9rem;
-  background: rgba(255,255,255,0.8);
-  border: 1px solid rgba(255,255,255,0.2);
-  border-radius: 6px;
-  color: white;
-  font-size: 1rem;
-}
-
-
-.form-row {
-  display: flex;
-  gap: 1rem;
-}
-
-.form-row .form-group {
-  flex: 1;
-}
-
-@media (max-width: 600px) {
-  .form-row {
-    flex-direction: column;
-  }
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--clr-purple);
+.contact-description {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 .btn-contact {
-  padding: 0.9rem;
+  display: inline-block;
+  padding: 0.9rem 2rem;
   border: 2px solid white;
   background: transparent;
   color: white;
   cursor: pointer;
   border-radius: 999px;
   transition: 0.3s;
+  text-decoration: none;
+  font-size: 1.1rem;
 }
 
 .btn-contact:hover {
   background: white;
   color: black;
-}
-
-.contact-description {
-margin-bottom: 50em;
-   
-}
-
-.form-message {
-  margin-bottom: 1rem;
-  font-size: 0.95rem;
 }
